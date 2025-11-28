@@ -1,0 +1,164 @@
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 0.5px solid #000;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.container {
+    padding: 2rem;
+    font-family: var(--font-space-mono), monospace;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.header {
+    margin-bottom: 2rem;
+    border-bottom: 0.5px solid #000;
+    padding-bottom: 1rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.description {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-size: 0.875rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.sectionTitle {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sizeGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.sizeButton {
+    padding: 0.75rem;
+    background: #fff;
+    border: 0.5px solid #000;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.sizeButton:hover {
+    background: #f0f0f0;
+}
+
+.sizeButton.selected {
+    background: #000;
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.button {
+    flex: 1;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.buyButton {
+    background: #fff;
+    border: 0.5px solid #000;
+    color: #000;
+}
+
+.buyButton:hover {
+    background: #000;
+    color: #fff;
+}
+
+.cartButton {
+    background: #000;
+    border: 0.5px solid #000;
+    color: #fff;
+}
+
+.cartButton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.faqItem {
+    border-bottom: 0.5px solid #000;
+}
+
+.faqQuestion {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    font-family: inherit;
+    font-size: 0.875rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqAnswer {
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
