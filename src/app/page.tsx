@@ -33,15 +33,6 @@ export default function Home() {
         {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
       <main className={styles.mainContent}>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={styles.videoBackground}
-        >
-          <source src="/Model_Clothes_Flaunting.mp4" type="video/mp4" />
-        </video>
         <div className={styles.productGrid}>
           {products.map((product) => (
             <ProductCard

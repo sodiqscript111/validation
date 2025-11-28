@@ -35,6 +35,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${spaceMono.variable}`}>
         <Header />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="video-background"
+        >
+          <source src="/Model_Clothes_Flaunting.mp4" type="video/mp4" />
+        </video>
         <main style={{ paddingTop: '80px', minHeight: '100vh' }}>
           {children}
         </main>
