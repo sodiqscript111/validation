@@ -18,7 +18,7 @@
 
 .navLink {
     text-decoration: none;
-    color: #000;
+    color: #000 !important;
     text-transform: uppercase;
     display: block;
     padding: 0.5rem 0;

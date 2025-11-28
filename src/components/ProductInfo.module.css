@@ -30,6 +30,7 @@
     font-family: var(--font-space-mono), monospace;
     height: 100%;
     overflow-y: auto;
+    color: #000;
 }
 
 .header {
